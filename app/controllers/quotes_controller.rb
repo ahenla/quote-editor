@@ -1,5 +1,4 @@
 class QuotesController < ApplicationController
-  class QuotesController < ApplicationController
     before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
     def index
@@ -48,5 +47,4 @@ class QuotesController < ApplicationController
     def quote_params
       params.require(:quote).permit(:name)
     end
-  end
 end
